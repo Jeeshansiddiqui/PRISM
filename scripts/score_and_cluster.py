@@ -23,13 +23,13 @@ DB_CONFIG = {
     "host":     "localhost",
     "port":     3306,
     "user":     "root",
-    "password": "yourpassword",
+    "password": "root",
     "database": "prism_db",
 }
 
 FEATURES = [
     "gdp_per_capita_usd", "gdp_growth_pct", "life_expectancy",
-    "school_enrollment_pct", "control_of_corruption", "trade_pct_gdp",
+    "school_enrollment_pct", "trade_pct_gdp",
 ]
 
 CLUSTER_NAMES = {
@@ -61,7 +61,6 @@ def create_output_tables():
             gdp_growth_pct        DOUBLE,
             life_expectancy       DOUBLE,
             school_enrollment_pct DOUBLE,
-            control_of_corruption DOUBLE,
             trade_pct_gdp         DOUBLE,
             prism_score           DOUBLE,
             cluster_id            INT,
