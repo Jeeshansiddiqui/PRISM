@@ -33,7 +33,7 @@ CLUSTER_NAMES = {0:"Fragile States", 1:"Developing Nations",
 
 def setup_db():
     c = mysql.connector.connect(host=DB["host"], port=DB["port"],
-                                user=DB["user"], password=DB["password"])
+                                user=DB["user"], password=DB["root"])
     cur = c.cursor()
     cur.execute(f"CREATE DATABASE IF NOT EXISTS {DB['database']}")
     c.commit(); cur.close(); c.close()
