@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+
+# Keep CSVs but not raw heavy files
+data/raw_economic_data.csv
+
+# Power BI binary (large)
+*.pbix
+
+# OS
+.DS_Store
+Thumbs.db
